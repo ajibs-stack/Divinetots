@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 :root {
-  --blue: #3752bf;
-  --gray: #4e5562;
+  --blue: #0056b3;
+  --slate: #e2e8f0;
+  --gray: #6B7280;
   --yellow: #e79137;
+  --lexand: "Lexend Deca", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -15,110 +19,56 @@ header {
   /* padding: 30px 10%; */
   display: flex;
   flex-direction: column;
-}
-
-header #first-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 30px 10%;
-}
-
-header h1 {
-  color: var(--blue);
-  font-size: 2rem;
-}
-
-header #search-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  font-family: var(--lexand);
   position: relative;
-}
-
-header #search-bar i {
-  position: absolute;
-  left: 10px;
-  color: var(--gray);
-  font-size: 1.1rem;
-}
-
-header #search-bar input {
-  padding: 15px 15px 15px 35px;
-  font-size: 1rem;
-  border: 1px solid var(--gray);
-  border-radius: 5px;
-  width: 500px;
-  /* max-width: 500px; */
-}
-
-header #search-bar input:focus {
-  /* outline: var(--blue); */
-  outline-color: var(--blue);
-  border-color: var(--blue);
-}
-
-header #search-bar input::placeholder {
-  color: var(--gray);
-}
-
-header #icons #desktop-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-header #icons i.fa-bars {
-  display: none;
-}
-
-header #icons i {
-  font-size: 1.5rem;
-  color: var(--gray);
-  cursor: pointer;
-}
-
-header #icons div {
-  position: relative;
-}
-
-header #icons div span {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: var(--yellow);
-  color: white;
-  font-size: 0.75rem;
-  padding: 2px 7px;
-  border-radius: 50%;
-}
-
-hr {
-  opacity: 0.3;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
   gap: 40px;
-  padding: 30px 0;
+  width: 80px;
+  padding: 30px 20px;
+  background-color: #EAEBEF;
+
 }
 
-header nav a {
-  text-decoration: none;
+nav div {
+  display: flex;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav div h1 {
+  font-size: 1.4rem;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+
+header nav div#icons {
+ display: flex;
+ gap: 30px;
+ flex-direction: column;
+}
+
+div#icons i {
+  font-size: 1.3rem;
+  cursor: pointer;
   color: var(--gray);
-  font-size: 0.9rem;
-  font-weight: 500;
-  position: relative;
-  padding: 7px 15px;
-}
-
-header nav a:hover {
-  background: #f3f4f6;
-  border-radius: 7px;
-}
+} 
 
 @media (max-width: 1023px) {
   /* lg and below */

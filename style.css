@@ -201,8 +201,51 @@ div#icons i {
 @media (max-width: 1023px) {
   /* lg and below */
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   /* tablets */
+
+  .main-content{
+    margin-left: 100px;
+  }
+
+  .hero-content{
+    max-width: none;
+    width: 95%;
+  }
+  .hero-right img{
+    width: 300px;
+  }
+
+   .hero-left h1 {
+    font-size: 2.9rem;
+    line-height: 42px;
+  }
+
+  .hero-left{
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .hero-left .subtle {
+    font-size: .8rem;
+    font-weight: 500;
+    max-width: 600px;
+  }
+
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: .9rem;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
 }
 
 @media (max-width: 639px) {
